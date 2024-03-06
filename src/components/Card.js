@@ -127,8 +127,8 @@ const Card = ({ movie }) => {
         <div
           className="btn"
           onClick={() => {
-            deleteStorage();
-           window.location.href('https://app-top-movies.netlify.app/coups-de-coeur');
+            deleteStorage(window.location.reload());
+           return false;
           }}
         >
           Supprimer de la liste
