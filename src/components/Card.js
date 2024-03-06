@@ -127,8 +127,8 @@ const Card = ({ movie }) => {
         <div
           className="btn"
           onClick={() => {
-            deleteStorage(window.location.reload());
-           return false;
+            deleteStorage();
+            window.location.reload(true);
           }}
         >
           Supprimer de la liste
