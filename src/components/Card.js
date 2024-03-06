@@ -128,7 +128,7 @@ const Card = ({ movie }) => {
           className="btn"
           onClick={() => {
             deleteStorage();
-            window.location.reload(true);
+            window.location.href('https://app-top-movies.netlify.app');
           }}
         >
           Supprimer de la liste
