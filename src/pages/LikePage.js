@@ -4,7 +4,7 @@ import { useState } from "react";
 import Header from "../components/Header";
 import axios from "axios";
 import Card from "../components/Card";
-import { cleanup } from "@testing-library/react";
+
 
 const LikePage = () => {
   const [listData, setListData] = useState([]);
