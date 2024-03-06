@@ -87,8 +87,9 @@ const Card = ({ movie }) => {
 
   const deleteStorage = () => {
     let storedData = window.localStorage.movies.split(",");
+    /* eslint eqeqeq: 0 */
     let newData = storedData.filter((id) => id != movie.id);
-
+    /* eslint eqeqeq: 1 */
     window.localStorage.movies = newData;
   };
 
